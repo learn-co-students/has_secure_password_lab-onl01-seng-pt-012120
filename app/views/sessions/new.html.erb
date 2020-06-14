@@ -1,0 +1,10 @@
+<h1>Login Page</h1>
+<%= form_tag ("/login") do |f| %>
+	<%= label_tag :user_name %>
+	<input type="text" name="user[name]" id="user_name">
+	<br>
+	<%= label_tag :user_password %>
+	<input type="password" name="user[password]" id="user_password">
+	<br>
+	<%= submit_tag "Login" %>
+<% end %>
